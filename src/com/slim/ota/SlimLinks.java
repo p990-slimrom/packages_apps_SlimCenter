@@ -12,7 +12,7 @@
  *  DESCRIPTION: SlimOTA keeps our rom up to date
  *
  *=========================================================================
- */
+ *
 
 package com.slim.ota;
 
@@ -153,3 +153,4 @@ public class SlimLinks extends Fragment {
         }
     }
 }
+*/

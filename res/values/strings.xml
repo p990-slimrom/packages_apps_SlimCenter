@@ -133,5 +133,6 @@
     <string name="slim_bugreport_summary">Create a complete Bugreport.</string>
     <string name="report_infosuccess">Created Systemreport, provide it to Team SlimRoms by attaching it to your Bugreport! You can find the Zip file on your SD-Card in a directory called \"Slim\".</string>
     <string name="report_infofail">Failed to create Bugreport, please try again.</string>
+    <string name="otaupdate">OTA Updates for p990 are in Settings > About phone > System updates</string>
 
 </resources>

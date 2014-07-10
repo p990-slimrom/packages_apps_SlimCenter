@@ -44,12 +44,14 @@ import com.commonsware.cwac.wakeful.WakefulIntentService;
 
 public class SlimOTA extends Fragment implements OnSharedPreferenceChangeListener {
 
+/*
     private static final int ID_DEVICE_NAME = R.id.deviceName;
     private static final int ID_DEVICE_CODE_NAME = R.id.deviceCodename;
     private static final int ID_CURRENT_VERSION = R.id.curVer;
     private static final int ID_CURRENT_FILE = R.id.curFile;
     private static final int ID_UPDATE_FILE = R.id.upToDate;
     private static final int ID_STATUS_IMAGE = R.id.updateIcon;
+*/
 
     private static final String LAST_INTERVAL = "lastInterval";
 
@@ -71,7 +73,7 @@ public class SlimOTA extends Fragment implements OnSharedPreferenceChangeListene
         View view = inflater.inflate(R.layout.slim_ota, container, false);
         return view;
     }
-
+/*
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
@@ -120,7 +122,7 @@ public class SlimOTA extends Fragment implements OnSharedPreferenceChangeListene
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
-
+*/
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
         if (key.equalsIgnoreCase("Filename")) {
@@ -203,8 +205,8 @@ public class SlimOTA extends Fragment implements OnSharedPreferenceChangeListene
     private void addShortCutFragment() {
         FragmentManager fragmentManager = this.getActivity().getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        SlimLinks slimLinks = new SlimLinks();
-        fragmentTransaction.replace(R.id.linksFragment, slimLinks);
+  //      SlimLinks slimLinks = new SlimLinks();
+  //      fragmentTransaction.replace(R.id.linksFragment, slimLinks);
         fragmentTransaction.commit();
     }
 
